@@ -99,17 +99,16 @@ def palindrome_checker():
         print(f"'{palindrome_string}' is a palindrome!")
     else:
         print(f"'{palindrome_string}' is not a palindrome!")
-  
     
-palindrome_checker()
 
-    
+
 
 def words_counter():
 
-    target_words = ["the" "was" "and"]
+    target_words = ["the", "was", "and"]
     word_counts = {word: 0 for word in target_words}
     file_path = input('enter the path to the text file:')
+    file_path = file_path.replace("\\", "/")
     try:
         with open(file_path,'r') as file:
             text = file.read().lower()
@@ -127,6 +126,7 @@ def words_counter():
                 print(f'The word "{word}" appears {count} times')
     except FileNotFoundError:
         print('file not found')
+
 
 
 
