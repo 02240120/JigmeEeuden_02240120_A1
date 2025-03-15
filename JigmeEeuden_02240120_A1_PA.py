@@ -98,7 +98,7 @@ def palindrome_checker():
     if is_palindrome:
         print(f"'{palindrome_string}' is a palindrome!")
     else:
-        print(f"'{palindrome_string}' is not a palindrome.")
+        print(f"'{palindrome_string}' is not a palindrome!")
   
     
 palindrome_checker()
